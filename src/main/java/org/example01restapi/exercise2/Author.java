@@ -7,11 +7,11 @@ public class Author {
     private int birthYear;
     private String nationality;
 
-    public Author(int id, String name, String nationality, int birthYear) {
+    public Author(int id, String name, int birthYear, String nationality) {
         this.id = id;
         this.name = name;
-        this.nationality = nationality;
         this.birthYear = birthYear;
+        this.nationality = nationality;
     }
 
     public int getId() {

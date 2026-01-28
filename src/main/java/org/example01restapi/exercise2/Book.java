@@ -1,22 +1,25 @@
 package org.example01restapi.exercise2;
 
+import org.example01restapi.exercise2.Author;
+import org.example01restapi.exercise2.Publisher;
+
 public class Book {
 
     private int id;
     private String title;
-    private String isbon;
+    private String isbn;
     private int publishedYear;
     private int edition;
     private Author author;
     private Publisher publisher;
 
-
-    public Book(String title, int id, int edition, String isbon, int publishedYear, Author author, Publisher publisher) {
-        this.title = title;
+    public Book(int id, String title, String isbn, int publishedYear,
+                int edition, Author author, Publisher publisher) {
         this.id = id;
-        this.edition = edition;
-        this.isbon = isbon;
+        this.title = title;
+        this.isbn = isbn;
         this.publishedYear = publishedYear;
+        this.edition = edition;
         this.author = author;
         this.publisher = publisher;
     }
@@ -37,12 +40,12 @@ public class Book {
         this.title = title;
     }
 
-    public String getIsbon() {
-        return isbon;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setIsbon(String isbon) {
-        this.isbon = isbon;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public int getPublishedYear() {
