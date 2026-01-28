@@ -1,4 +1,4 @@
-package org.example01restapi;
+package org.example01restapi.exercise1;
 
 import java.time.LocalDateTime;
 
